@@ -1,0 +1,19 @@
+{
+  "name": "yarn-nohoist",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "workspaces": {
+    "packages": ["a", "b", "c", "d"],
+    "nohoist": [
+      "**/a", "a/**",
+      "**/b", "b/**",
+      "**/c", "c/**",
+      "**/d", "d/**"
+    ]
+  },
+  "private": "true",
+  "scripts": {
+    "clean": "rm -rf node_modules/ a/node_modules b/node_modules c/node_modules d/node_modules"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "b",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@types/jest": "^23.3.12",
+    "c": "1.0.0",
+    "d": "1.0.0"
+  }
+}
